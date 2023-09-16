@@ -1,0 +1,65 @@
+@import "../../../style-config/mixin.scss";
+
+
+.widget{
+    background-color: #fff;
+    margin-left: 10px;
+    flex: 0.25;
+    // max-width: 300px;
+    overflow: hidden;
+    height: fit-content;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    @include small-sreen{
+        display: none;
+    }
+    .widget-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        svg{
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+    .widget-body{
+        margin-top: 28px;
+        width: 100%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8px 16px;
+            align-items: center;
+
+            li{
+                cursor: pointer;
+                list-style: circle;
+                border-bottom: 1px solid #eee;
+                margin-bottom: 8px;
+                h4{
+                    overflow: hidden;
+                    width: 60%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-left: 12px;
+                }
+                p{
+                    overflow: hidden;
+                    margin-left: 12px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 80%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+Notes : Redux
+
+Redux Is A Js Library its kind of Store For our app . we can manage state globally by using Redux
+
+Steps : 
+
+Initial State : 
+
+
+Reducer : Reducer is a pure which has action what to do how to do,
+Action : Action has payload 
+
+
+Selector : 
+

@@ -1,0 +1,118 @@
+@import "../../style-config/mixin.scss";
+
+.sign-in{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    @include small-sreen{
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    .sign-in-left{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 38px;
+        justify-content: center;
+        @include small-sreen{
+            display: none;
+        }
+        .logo{
+            display: flex;
+            cursor: pointer;
+            margin-top: -20px;
+            align-items: center;
+            h3{
+                font-size: 72px;
+                font-weight: 700;
+                color: rgb(170, 194, 114);
+            }
+            img{
+                width: 58px;
+                height: 58px;
+            }
+        }.content{
+            padding-top: 38px;
+        }
+        img{
+            width: 272px;
+            height: 272px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            font-weight: 500;
+        }
+    }
+    .sign-in-form{
+        margin-left: 58px;
+        display: flex;
+        background-color: #fff;
+        padding: 18px;
+        border-radius: 10px;
+        width: 40%;
+        box-shadow: 0 0 4px 8px #efefe1;
+        @include small-sreen{
+            width: 80%;
+            margin: 0 auto;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            row-gap: 18px;
+            width: 100%;
+            input{
+                padding: 12px;
+                border-radius: 5px;
+                outline: 0;
+                border: 1px solid #777;
+                width: 100%;
+                height: 38px;
+            }
+            button{
+                background-color: rgb(84, 84, 233);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 600;
+                border: 2px solid transparent;
+                &:hover{
+                    background-color: #fff;
+                    color: rgb(84, 84, 233);
+                    border: 2px solid rgb(84, 84, 233);
+                }
+            }
+            p{
+                margin: auto;
+                text-align: center;
+                cursor: pointer;
+                color: blue;
+                font-size: 18px;
+                width: fit-content;
+                border-bottom: 1px solid transparent;
+
+                &:hover{
+                    border-bottom: 1px solid blue;
+                }
+            }
+            .sign-up-page{
+                background-color: rgb(177, 235, 90);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+}

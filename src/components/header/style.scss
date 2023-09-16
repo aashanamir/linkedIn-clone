@@ -1,0 +1,67 @@
+@import "../../style-config/mixin.scss";
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px 0px;
+    z-index: 99;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-left {
+        display: flex;
+        align-items: center;
+        .logo{
+            height: 32px;
+            margin-right: 12px;
+            img{
+                height: 100%;
+            }
+        }
+        .search-bar{
+            display: flex;
+            min-width: 250px;
+            padding: 6px;
+            height: 32px;
+            align-items: center;
+            background-color: #edf3f8;
+            border-radius: 5px;
+            font-size: 24px;
+            input{
+                background-color: transparent;
+                margin-left: 2px;
+                border: none;
+                outline: none;
+            }
+            svg{
+                color: #8888;
+                font-size: 20px;
+            }
+        }
+        
+    }
+    .header-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        // border: 2px solid black;
+        @include small-sreen{
+            position: fixed;
+            background-color: #fff;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+        }
+        .my-avatar{
+            @include small-sreen{
+                display: none;
+            }
+        }
+    }
+}

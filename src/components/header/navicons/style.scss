@@ -1,0 +1,44 @@
+.navicon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 28px;
+    &:nth-child(1){
+        color: black;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 1px solid black;
+        }
+    }
+    svg{
+        font-size: 22px;
+    }
+}
+
+.my-avatar{
+    margin-left: 28px;
+    .navicon{
+        &::before{
+            border: 0;
+        }
+    }
+    .css-2s90m6-MuiAvatar-root{
+        height: 30px;
+        width: 30px;
+        .MuiAvatar-circular{
+            height: 30px;
+            width: 30px;
+            object-fit: contain;
+        }
+    }
+    
+}
+
